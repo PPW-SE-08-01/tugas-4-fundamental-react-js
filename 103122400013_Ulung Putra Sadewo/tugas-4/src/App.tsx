@@ -1,10 +1,17 @@
+import Sapaan from "./components/sapaan";
 import CardMahasiswa from "./components/CardMahasiswa";
+import Counter from "./components/Counter";
+import FormNama from "./components/FormNama";
 
 function App() {
   return (
     <div>
-      <CardMahasiswa nama="Ulung" nim="1021313313" />
-      <CardMahasiswa nama="Hebat" nim="1021313333" />
+      <Sapaan />
+      <CardMahasiswa nama="Ulung Putra Sadewo" nim="103122400013" />
+      <hr />
+      <Counter />
+      <hr />
+      <FormNama />
     </div>
   );
 }
