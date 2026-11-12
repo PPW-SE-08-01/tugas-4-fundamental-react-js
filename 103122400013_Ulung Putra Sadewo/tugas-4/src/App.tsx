@@ -2,6 +2,7 @@ import Sapaan from "./components/sapaan";
 import CardMahasiswa from "./components/CardMahasiswa";
 import Counter from "./components/Counter";
 import FormNama from "./components/FormNama";
+import DaftarMahasiswa from "./components/DaftarMahasiswa";
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
       <Counter />
       <hr />
       <FormNama />
+      <hr />
+      <DaftarMahasiswa />
     </div>
   );
 }
