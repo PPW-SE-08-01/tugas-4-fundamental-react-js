@@ -1,4 +1,4 @@
-function CardMahasiswa() {
+function CardMahasiswa(props) {
     return (
         <div className="card">
             <h3>{props.nama}</h3>
