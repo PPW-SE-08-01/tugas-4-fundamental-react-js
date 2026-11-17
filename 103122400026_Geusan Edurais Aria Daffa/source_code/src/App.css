@@ -1,0 +1,242 @@
+/* src/App.css */
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 28px 32px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e8eaed;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 6px 0;
+}
+
+.student-info {
+  font-size: 13px;
+  color: #5f6368;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.section {
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #edf0f2;
+}
+
+.section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.section h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0b57d0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 12px 0;
+}
+
+/* 6.3 Sapaan */
+.sapaan-box {
+  background-color: #f8fafd;
+  border: 1px solid #dbe6f5;
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+
+.sapaan-box h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+  color: #1a1a1a;
+}
+
+.sapaan-box p {
+  margin: 0;
+  font-size: 14px;
+  color: #555555;
+}
+
+/* 6.4, 6.6, 6.7 Card List & Cards */
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card {
+  border: 1px solid #e2e5e9;
+  border-radius: 8px;
+  padding: 12px 16px;
+  background-color: #ffffff;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  border-color: #c5cdd6;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.card h3 {
+  margin: 0 0 4px 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #202124;
+}
+
+.card p {
+  margin: 0;
+  font-size: 13px;
+  color: #5f6368;
+}
+
+/* 6.5 Counter */
+.counter-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.counter-display {
+  margin: 0;
+  font-size: 14px;
+  color: #333333;
+}
+
+.counter-badge {
+  display: inline-block;
+  background-color: #e8f0fe;
+  color: #0b57d0;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  margin-left: 4px;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* 6.5.1 FormNama */
+.form-nama-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-inline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-inline label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.form-inline input {
+  flex: 1;
+  max-width: 320px;
+}
+
+.greeting-text {
+  margin: 0;
+  font-size: 14px;
+  color: #444444;
+}
+
+/* Inputs & Buttons shared styles */
+input {
+  padding: 9px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+input:focus {
+  border-color: #0b57d0;
+  box-shadow: 0 0 0 3px rgba(11, 87, 208, 0.15);
+}
+
+button {
+  padding: 9px 16px;
+  background-color: #0b57d0;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #0842a0;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button.btn-secondary {
+  background-color: #f1f3f4;
+  color: #3c4043;
+  border: 1px solid #dadce0;
+}
+
+button.btn-secondary:hover {
+  background-color: #e8eaed;
+  color: #202124;
+}
+
+/* 6.7 Form Group */
+.form-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.form-group input {
+  flex: 1;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 16px;
+  }
+
+  .form-group {
+    flex-direction: column;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-inline input {
+    max-width: 100%;
+  }
+}
