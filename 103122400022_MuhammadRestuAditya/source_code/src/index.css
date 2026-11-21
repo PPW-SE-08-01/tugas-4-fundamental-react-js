@@ -1,1 +1,30 @@
-@import "tailwindcss";
+body {
+  margin: 0;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  max-width: 250px;
+}
+
+button {
+  padding: 6px 12px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+input {
+  padding: 6px 8px;
+  margin-right: 6px;
+}
+
+hr {
+  margin: 24px 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
